@@ -1,7 +1,16 @@
 a=input()
 b=input()
-i=0
 c=0
-for i in len(a):
-    if a[i]==a[i+1] && b[i]=b[i+1]:
-        
+temp=0
+y=len(a)
+for i in range(0,y-1,1):
+    if a[i]==a[i+1] and b[i]==b[i+1]:
+        c=c+1
+    elif a[i]!=a[i+1] and b[i]!=b[i+1]:
+        c=c+1
+    elif (a[i]!=a[i+1] and b[i]==b[i+1]) or (a[i]==a[i+1] and b[i]!=b[i+1]):
+        temp=1
+if temp==1:
+          print("no")
+else:
+          print("yes")
