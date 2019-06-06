@@ -1,3 +1,4 @@
+y=int(input())
 a=input()
 b=a[::-1]
 for i in b:
